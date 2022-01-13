@@ -1,0 +1,10 @@
+.header{
+    background: #002288;
+    color: white;
+    height: 5rem;
+    display: flex;
+}
+
+.header .title{
+    margin-left: 15px;
+}
