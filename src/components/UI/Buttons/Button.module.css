@@ -1,0 +1,29 @@
+.button{
+    border-radius: 30px;
+    border: 1px solid black;
+    width: 140px;
+    height: 40px;
+    color:white;
+    background:#0b0699;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: #053de5;
+  border-color: #053de5;
+}
+
+.button:focus {
+  outline: none;
+}
+
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}

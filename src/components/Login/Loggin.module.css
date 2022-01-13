@@ -1,8 +1,6 @@
 .login {
-    width: 90%;
     max-width: 40rem;
-    margin: 2rem auto;
-    padding: 2rem;
+    padding: 2rem;   
   }
   
   .control {
@@ -54,3 +52,4 @@
     }
   
   }
+  

@@ -1,15 +1,18 @@
 import React from 'react';
 import Card from '../UI/Cards/Card';
+import Button from '../UI/Buttons/Button';
 
 import classes from './Loggin.module.css';
 
-const Loggin = () => {
+const Loggin = (props) => {
     const onSubmit = (event) =>{
         event.preventDefault();
+        props.onLoggin();
     }
 
     const emailIsValid = true;
     const passwordlIsValid = true;
+    const formIsValid = true;
     return(
         <Card className={classes.login}>
             <form onSubmit={onSubmit}>
@@ -21,8 +24,11 @@ const Loggin = () => {
                     <label htmlFor='password'>Password</label>
                     <input id='password' type='password'/>
                 </div>
-                    <button type="submit">Loggin</button>
-                
+                <div className={classes.actions}>
+                    <Button type={"submit"} className={classes.btn} disabled={!formIsValid}>
+                        Login
+                    </Button>
+                </div>
             </form>
         </Card>
     );
