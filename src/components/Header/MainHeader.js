@@ -6,7 +6,7 @@ const MainHeader = (props)=> {
     return(
         <header className={classes.header}>
             <h2 className={classes.title}>LogginApp</h2>
-            {props.isAuthenticated && (<Navigation onLogout={props.onLogout}/>)}
+            <Navigation />
         </header>
     );
 }
